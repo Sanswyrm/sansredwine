@@ -1,0 +1,35 @@
+```{r echo=FALSE, Bivariate_Plots}
+ggplot(aes(x = quality, y = fixed.acidity), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y =residual.sugar ), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = citric.acid), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = alcohol), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = density), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = free.sulfur.dioxide), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = total.sulfur.dioxide), data = reds) +
+  geom_point()
+```
+```{r}
+ggplot(aes(x = quality, y = chlorides), data = reds) +
+  geom_point()
+```
+```{r}
+cor.test(reds$quality, reds$free.sulfur.dioxide)
+```
